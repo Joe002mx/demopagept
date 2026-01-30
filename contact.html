@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Premium PT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="index.html" class="brand">Premium PT</a>
+            <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="results.html" class="nav-link">Results</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Let's Connect</h1>
+                <p class="hero-subtitle lead">We're here to answer your questions and help you start your fitness journey. Expect a response within 24-48 hours.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <h2 class="section-title">Send Us an Enquiry</h2>
+            <p class="lead">Please fill out the form below with your details and goals. Your information is kept confidential and used solely to assist with your enquiry.</p>
+
+            <form name="pt-enquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form">
+                <input type="hidden" name="form-name" value="pt-enquiry">
+                <p class="hidden">
+                    <label>Don’t fill this out: <input name="bot-field"></label>
+                </p>
+
+                <div class="form-field">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="goal">Your Primary Fitness Goal</label>
+                    <select id="goal" name="goal" required>
+                        <option value="">-- Please select --</option>
+                        <option value="lose-weight">Weight Loss</option>
+                        <option value="gain-muscle">Muscle Gain</option>
+                        <option value="improve-endurance">Endurance Improvement</option>
+                        <option value="general-fitness">General Fitness</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+
+                <div class="form-success" aria-live="polite" hidden>
+                    <p>Thank you for your message! We'll be in touch soon.</p>
+                </div>
+                <div class="form-error" aria-live="assertive" hidden>
+                    <p>There was an error submitting your form. Please try again.</p>
+                </div>
+            </form>
+        </section>
+
+        <section class="section container">
+            <h2 class="section-title">Other Ways to Connect</h2>
+            <p class="lead">If you prefer, you can also reach us via:</p>
+            <ul class="contact-alternatives">
+                <li>Email: <a href="mailto:info@premiupt.com">info@premiupt.com</a></li>
+                <li>Instagram: <a href="https://instagram.com/premiupt" target="_blank" rel="noopener noreferrer">@premiupt</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2023 Premium PT. All rights reserved. <span class="disclaimer">Results may vary based on individual effort and consistency.</span></p>
+            <div class="footer-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="results.html" class="nav-link">Results</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <p class="demo-note">Demo site.</p>
+        </div>
+    </footer>
+
+    <div class="sticky-cta">
+        <div class="container">
+            <span>Ready to elevate your fitness?</span>
+            <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
